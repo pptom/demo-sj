@@ -80,7 +80,7 @@ public class DataSourceConfig {
 	}
 	private DataSource buildDataSource() {
 		//设置分库映射
-		Map<String, DataSource> dataSourceMap = new HashMap<>(2);
+		Map<String, DataSource> dataSourceMap = new HashMap<>(1);
 		//添加两个数据库ds_0,ds_1到map里
 		dataSourceMap.put("ds_0", createDataSource());
 //		dataSourceMap.put("ds_1", createDataSource("ds_1"));//暂时保留，以后分库用
